@@ -1,2 +1,2 @@
-# directives
+# Directives
 
