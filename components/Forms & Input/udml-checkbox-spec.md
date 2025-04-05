@@ -1,4 +1,4 @@
-# `<checkbox>` Component
+# `<checkbox>`
 
 The `<checkbox>` component allows selection of a true/false value in a form.
 ---

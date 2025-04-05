@@ -1,4 +1,4 @@
-# `<input>` Component
+# `<input>`
 
 The `<input>` component captures user input. It supports multiple types and can be styled using tokens or named styles.
 ---

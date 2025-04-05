@@ -1,4 +1,4 @@
-# `<stepper>` Component
+# `<stepper>`
 
 The `<stepper>` component provides increment/decrement control for numeric values, typically with plus/minus buttons.
 ---

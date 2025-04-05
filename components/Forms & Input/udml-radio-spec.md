@@ -1,4 +1,4 @@
-# `<radio>` Component
+# `<radio>`
 
 The `<radio>` component represents a single radio button option. Use multiple radios together with the same `name` to form a group.
 ---

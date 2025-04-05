@@ -1,4 +1,4 @@
-# `<text>` Component
+# `<text>`
 
 The `<text>` component renders inline or block text content. It supports styling and semantic variants for body copy, labels, metadata, and headings.
 ---

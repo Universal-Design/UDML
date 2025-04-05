@@ -1,4 +1,4 @@
-# `<avatar>` Component
+# `<avatar>`
 
 The `<avatar>` component displays a profile image or initials as a circular or rounded shape.
 ---

@@ -1,4 +1,4 @@
-# `<image>` Component
+# `<image>`
 
 The `<image>` component renders an image with optional alt text, sizing, and display fit.
 ---

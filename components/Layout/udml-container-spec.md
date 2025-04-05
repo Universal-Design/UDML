@@ -1,4 +1,4 @@
-# `<container>` Component
+# `<container>` 
 
 The `<container>` component defines a constrained content wrapper, often used to center or limit content width.
 ---

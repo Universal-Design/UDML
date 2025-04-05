@@ -1,4 +1,4 @@
-# `<textarea>` Component
+# `<textarea>`
 
 The `<textarea>` component provides a multi-line text input for longer form content.
 ---

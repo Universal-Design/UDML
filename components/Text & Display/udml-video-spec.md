@@ -1,4 +1,4 @@
-# `<video>` Component
+# `<video>`
 
 The `<video>` component embeds a playable video file or stream with optional controls and preview.
 ---

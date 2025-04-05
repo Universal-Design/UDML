@@ -1,4 +1,4 @@
-# `<box>` Component
+# `<box>`
 
 The `<box>` component is a flexible, generic block element for layout composition or visual styling.
 ---

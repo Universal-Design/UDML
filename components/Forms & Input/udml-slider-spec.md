@@ -1,4 +1,4 @@
-# `<slider>` Component
+# `<slider>`
 
 The `<slider>` component lets users select a numeric value from a defined range using a track and handle.
 ---

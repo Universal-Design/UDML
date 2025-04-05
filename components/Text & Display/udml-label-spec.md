@@ -1,4 +1,4 @@
-# `<label>` Component
+# `<label>`
 
 The `<label>` component provides accessible labeling for inputs, toggles, and fields.
 ---

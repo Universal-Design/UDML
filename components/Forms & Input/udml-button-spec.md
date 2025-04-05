@@ -1,4 +1,4 @@
-# `<button>` Component
+# `<button>`
 
 The `<button>` component represents an interactive button used to trigger actions or submit forms. It supports variant styling and optional icons.
 ---

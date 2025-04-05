@@ -1,4 +1,4 @@
-# `<heading>` Component
+# `<heading>`
 
 The `<heading>` component semantically represents section titles or screen-level headings. It maps to `<h1>` through `<h6>` depending on hierarchy.
 ---

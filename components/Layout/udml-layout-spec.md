@@ -1,4 +1,4 @@
-# `<layout>` Component
+# `<layout>`
 
 The `<layout>` component defines spatial arrangement of child elements using a named layout model such as `stack`, `row`, or `grid`.
 ---

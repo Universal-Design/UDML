@@ -1,4 +1,4 @@
-# `<icon>` Component
+# `<icon>`
 
 The `<icon>` component renders a named vector icon. It supports alignment, size, and color styling.
 ---

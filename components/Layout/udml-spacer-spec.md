@@ -1,4 +1,4 @@
-# `<spacer>` Component
+# `<spacer>`
 
 The `<spacer>` component adds flexible or fixed whitespace between elements. It may grow, shrink, or push content in flex layouts.
 ---

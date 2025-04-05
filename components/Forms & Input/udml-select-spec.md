@@ -1,4 +1,4 @@
-# `<select>` Component
+# `<select>`
 
 The `<select>` component presents a dropdown list of options. Use with nested `<option>` elements.
 ---

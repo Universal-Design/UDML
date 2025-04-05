@@ -1,4 +1,4 @@
-# `<switch>` Component
+# `<switch>`
 
 The `<switch>` component is a toggle switch (alternative to checkbox) used to represent binary on/off states.
 ---

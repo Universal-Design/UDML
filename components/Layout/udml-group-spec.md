@@ -1,4 +1,4 @@
-# `<group>` Component
+# `<group>` 
 
 The `<group>` component groups elements without imposing layout. It's useful for logical grouping, slot fallback, or nested semantics.
 ---

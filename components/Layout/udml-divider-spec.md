@@ -1,4 +1,4 @@
-# `<divider>` Component
+# `<divider>`
 
 The `<divider>` component visually separates content with a horizontal or vertical line.
 ---
