@@ -1,70 +1,162 @@
-# `<binding>` Directive Specification (Global Data Binding Model)
+# `<data>` Directive Specification
 
-The `<binding>` directive in UDML allows authors to mark any content or attribute as dynamic. It can specify a suggested data path, a fallback placeholder, and an optional semantic hint to guide AI interpretation or mock rendering.
+The `<data>` directive provides a simple way to specify data binding for individual elements within a visual design.
 
 ---
 
 ## 🧠 Purpose
 
-To indicate that a value in the UI should be dynamically loaded or computed at runtime, while still preserving meaning and providing design-time feedback.
+To enable designers to specify what data should populate each visual element, while maintaining complete control over the element's appearance and layout.
 
 ---
 
 ## 🛠 Usage Syntax
 
-### 1. As a child element
-
+### 1. Basic Element Data
 ```xml
-<text>
-  <binding path="user.name" placeholder="Jane Doe" hint="Full name of the logged-in user"/>
-</text>
+<card>
+  <row gap="16px" align="center">
+    <image width="48px" height="48px" radius="24px">
+      <data 
+        description="User's profile picture"
+        mock="avatar"
+        type="image"
+      />
+    </image>
+    <column>
+      <text size="large" weight="bold">
+        <data 
+          description="User's full name"
+          mock="John Smith"
+          type="string"
+        />
+      </text>
+      <text color="gray">
+        <data 
+          description="User's role"
+          mock="Design Lead"
+          type="string"
+        />
+      </text>
+    </column>
+  </row>
+</card>
 ```
 
-### 2. As attributes
-
+### 2. Form Field Data
 ```xml
-<input type="email" bind="user.email" placeholder="jane@example.com" hint="User email address"/>
+<column gap="16px">
+  <text size="small" color="gray">Email Address</text>
+  <input type="email" width="100%" padding="12px">
+    <data 
+      description="User's email address"
+      mock="john.smith@example.com"
+      type="email"
+      required="true"
+    />
+  </input>
+</column>
 ```
 
-### 3. As inline shorthand
-
+### 3. Table Column Data
 ```xml
-<text>{{ ?user.name || "Jane Doe" }}</text>
+<dataTable>
+  <column name="customer" header="Customer">
+    <data 
+      description="Customer's full name"
+      mock="customer"
+      type="string"
+    />
+  </column>
+  <column name="orderDate" header="Order Date">
+    <data 
+      description="Date the order was placed"
+      mock="date"
+      type="date"
+      format="MM/DD/YYYY"
+    />
+  </column>
+</dataTable>
 ```
 
 ---
 
 ## 🔑 Attributes
 
-| Attribute     | Required | Description |
-|---------------|----------|-------------|
-| `path`        | No       | Suggested data binding path (e.g., `user.name`) |
-| `placeholder` | Yes      | Default or mock value for rendering |
-| `hint`        | No       | Semantic meaning for the bound value |
-| `type`        | No       | Optional type hint (e.g., `string`, `image`, `boolean`) |
+| Attribute | Type | Required | Description |
+|-----------|------|----------|-------------|
+| `description` | string | Yes | Semantic description of the data |
+| `mock` | string | No | Mock value or mock data type |
+| `type` | string | No | Data type (`string`, `number`, `boolean`, `date`, `image`, `status`) |
+| `format` | string | No | Format pattern (e.g., "MM/DD/YYYY" for dates) |
+| `transform` | string | No | Transformation expression |
+| `required` | boolean | No | Whether the field is required |
 
 ---
 
 ## ✅ Example Usages
 
+**User Profile Card**
 ```xml
-<avatar src="{{ user.avatarUrl || '/images/default.png' }}" hint="User profile picture"/>
+<card padding="24px" radius="8px">
+  <column gap="24px">
+    <row gap="16px" align="center">
+      <image width="64px" height="64px" radius="32px">
+        <data 
+          description="User's profile picture"
+          mock="avatar"
+          type="image"
+        />
+      </image>
+      <column>
+        <text size="xlarge" weight="bold">
+          <data 
+            description="User's full name"
+            mock="John Smith"
+            type="string"
+          />
+        </text>
+        <text color="gray">
+          <data 
+            description="User's role"
+            mock="Design Lead"
+            type="string"
+          />
+        </text>
+      </column>
+    </row>
+  </column>
+</card>
 ```
 
+**Status Indicator**
 ```xml
-<text>
-  <binding path="invoice.total" placeholder="$149.00" hint="Total amount due"/>
-</text>
+<box 
+  padding="8px 16px" 
+  background="#f0f9ff" 
+  radius="4px"
+  width="fit-content"
+>
+  <text color="#0066cc">
+    <data 
+      description="User's status"
+      mock="Active"
+      type="status"
+    />
+  </text>
+</box>
 ```
 
 ---
 
 ## 🧠 AI Interpretation Guidelines
-
-- Use `path` as a data reference for props/state
-- Display `placeholder` in mock UI or previews
-- Use `hint` to infer structure, logic, or naming
-- `type` may help determine UI widgets or validation
+- Preserve all visual styling and layout
+- Apply data binding based on the data specification
+- Generate appropriate mock data based on type
+- Handle data transformations
+- Support nested structures
+- Maintain accessibility
+- Generate appropriate data fetching logic
 
 ---
 
