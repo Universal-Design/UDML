@@ -1,4 +1,4 @@
-# 🧠 Prompting AI Developer Tools with UDML in an Existing Codebase
+# 🧠 Working with UDML in an Existing Codebase
 
 UDML (Universal Design Markup Language) is a structured, semantic XML format used to describe user interfaces. When working in an existing project (e.g., a React + Tailwind codebase), your goal is not to regenerate everything, but to **translate the intent and structure of the UDML into the appropriate parts of your application.**
 
