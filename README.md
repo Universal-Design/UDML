@@ -1,14 +1,10 @@
----
-description: ': A Universal Design Language for the AI Era'
----
-
 # What is UDML?
 
-\##A Universal Design Language for the AI Era
 
-## UDML (Universal Design Markup Language) – Specification v0.1
 
-> A semantic, XML-based design language for describing user interfaces in a way that AI developer agents can transform into fully functional applications across any platform or framework.
+## A universal design language for the AI era
+
+> UDML is semantic, XML-based design language for describing user interfaces in a way that AI developer agents can transform into fully functional applications across any platform or framework.
 
 ***
 
