@@ -1,4 +1,4 @@
-# `<screens>` Section
+# `<screens>`
 
 The `<screens>` section defines the top-level visual structure of each screen in the application. Each `<screen>` block is a single view or route, built from layouts and components.
 
