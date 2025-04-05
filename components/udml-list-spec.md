@@ -1,7 +1,6 @@
-# <list> Component
+# `<list>` Component
 
 The `<list>` component renders a vertical or horizontal list of repeated items.
----
 
 ## 🛠 Attributes
 
@@ -21,5 +20,3 @@ The `<list>` component renders a vertical or horizontal list of repeated items.
 ```xml
 <list data="{{ users }}"><listItem>{{ user.name }}</listItem></list>
 ```
-
----

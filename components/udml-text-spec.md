@@ -1,7 +1,6 @@
-# <text> Component
+# `<text>` Component
 
 The `<text>` component renders inline or block text content. It can express different visual weights, sizes, or semantic roles (e.g., heading, body, caption).
----
 
 ## 🛠 Attributes
 
@@ -15,6 +14,7 @@ The `<text>` component renders inline or block text content. It can express diff
 | `ai-hint` | string | No | Optional guidance for AI if the content or usage is ambiguous |
 
 ## 💡 Examples
+
 **Simple Heading**
 ```xml
 <text variant="title">Welcome</text>
@@ -24,5 +24,3 @@ The `<text>` component renders inline or block text content. It can express diff
 ```xml
 <text size="md" color="muted">This is an example of body content.</text>
 ```
-
----

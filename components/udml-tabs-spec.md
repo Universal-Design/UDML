@@ -1,7 +1,6 @@
-# <tabs> Component
+# Tabs Component
 
 The `<tabs>` component manages tabbed navigation with associated panels.
----
 
 ## 🛠 Attributes
 
@@ -20,5 +19,3 @@ The `<tabs>` component manages tabbed navigation with associated panels.
 ```xml
 <tabs><tab label="Info"><text>Info panel</text></tab><tab label="Settings"><text>Settings panel</text></tab></tabs>
 ```
-
----
