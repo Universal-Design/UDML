@@ -1,6 +1,0 @@
----
-icon: markdown
----
-
-# Markdown
-
