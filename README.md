@@ -1,4 +1,10 @@
-# UDML: A Universal Design Language for the AI Era
+---
+description: ': A Universal Design Language for the AI Era'
+---
+
+# What is UDML?
+
+\##A Universal Design Language for the AI Era
 
 ## UDML (Universal Design Markup Language) – Specification v0.1
 
