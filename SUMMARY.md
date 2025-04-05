@@ -72,7 +72,7 @@
     * [\<label>](<components/Text & Display/udml-label-spec.md>)
     * [\<text>](<components/Text & Display/udml-text-spec.md>)
     * [\<video>](<components/Text & Display/udml-video-spec.md>)
-* [directives](directives/README.md)
+* [Directives](directives/README.md)
   * [ai-hint](directives/udml-ai-hint-spec.md)
   * [\<binding> (Global Data Binding Model)](directives/udml-binding-spec.md)
   * [\<responsive>](directives/udml-responsive-spec.md)
