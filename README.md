@@ -1,152 +1,106 @@
-# What is UDML?
+# 🌐 What is UDML?
 
+### A universal design language for the AI era — built in public, by the community
 
-## A universal design language for the AI era
+> **UDML** (Universal Design Markup Language) is an open, semantic design language that describes user interfaces in a way that AI developer agents — like Cursor, Copilot, or Claude — can turn into fully functional applications across platforms and frameworks.
 
-> UDML is semantic, XML-based design language for describing user interfaces in a way that AI developer agents can transform into fully functional applications across any platform or framework.
+Unlike static design files, UDML is *inherently semantic* and *machine-readable by default*. But more importantly, it's *meant to evolve with your input.*
 
-***
+---
 
-### 1. Purpose
+## 💡 Why UDML?
 
-UDML provides a framework-agnostic, machine-readable way to describe the structure, style, and behavior of user interfaces. Unlike traditional design files (e.g., Figma or Sketch), UDML is inherently semantic and designed for consumption by AI agents such as Copilot, Cursor, or custom AI tooling.
+The way we design and build interfaces is changing — fast.
 
-***
+- Design tools like Figma are visual, but not semantic.
+- AI tools are smart, but need structure and context to generate production-grade code.
+- Developers and designers still rely on handoff, rewrites, and tribal knowledge to ship UI.
 
-### 2. Core Concepts
+**UDML changes that** by creating a shared language between humans and machines — one that describes *intent*, not just pixels.
 
-#### 2.1 Semantic UI Definition
+---
 
-Every element in UDML represents a meaningful UI concept (e.g., button, card, screen), not just a rectangle or group. This enables better reasoning and portability across platforms.
+## 🤝 Made to Be a Community Standard
 
-#### 2.2 AI-Oriented Metadata
+UDML isn’t just a spec — it’s a conversation.
 
-UDML allows authors to express **intent**, not just structure—helping AI developer tools infer user goals and context during code generation.
+We’re building this in the open, and we need your help:
+- 📐 Suggest improvements to the language and naming
+- 🧩 Propose new components, behaviors, or interaction patterns
+- 🔌 Share ideas for tooling, integrations, and real-world use
 
-#### 2.3 Modularity
+> **If you've ever wanted a better way to design for machines *and* people — you're in the right place.**
 
-Supports reusable components, external design libraries, and multi-screen apps.
+Join the [Discussions](../../discussions), open an [Issue](../../issues), or jump into a [Pull Request](../../pulls). We’d love to hear from you.
 
-#### 2.4 Extensibility
+---
 
-New components, tokens, or behaviors can be added without breaking the core language.
+## 🔍 Quick Overview
 
-***
+### ✅ What UDML Is:
+- XML-based and easy to parse
+- Describes structure, style, behavior, and intent
+- Designed for AI agents to generate UI across any environment
+- Modular, extensible, and reusable
 
-### 3. File Structure
+### 🚫 What It’s Not:
+- A rendering engine
+- A replacement for Figma or code
+- A locked spec — we’re building this together
+
+---
+
+## 🧠 Core Concepts
+
+### 1. **Semantic UI**
+Everything in UDML maps to a real UI concept — not just a shape or layer.
+
+### 2. **AI-Oriented**
+You can embed **plain language instructions** to help AI understand the *why* behind your design.
+
+### 3. **Modular & Reusable**
+Use components, tokens, and imports to scale across teams and projects.
+
+### 4. **Open & Extensible**
+UDML can grow with your needs — define your own tokens, screens, and even new elements.
+
+---
+
+## 🗂 UDML Structure
 
 ```xml
 <udml version="1.0">
-  <instructions>...</instructions>    <!-- Optional: natural language guidance for AI agents -->
-  <meta>...</meta>                    <!-- Optional: structured metadata -->
-
-  <tokens>...</tokens>                <!-- Global design tokens (colors, spacing, typography) -->
-  <styles>...</styles>                <!-- Reusable named style definitions -->
-  <components>...</components>        <!-- Custom components, made from base elements -->
-  <screens>...</screens>              <!-- Individual UI screens or views -->
-  <imports>...</imports>              <!-- External UDML documents (design libraries) -->
+  <instructions>...</instructions>    <!-- Human-readable goals for AI -->
+  <meta>...</meta>                    <!-- Authoring and context metadata -->
+  <tokens>...</tokens>                <!-- Global colors, spacing, typography -->
+  <styles>...</styles>                <!-- Reusable visual styles -->
+  <components>...</components>        <!-- Custom UI components -->
+  <screens>...</screens>              <!-- Pages, views, or modals -->
+  <imports>...</imports>              <!-- External libraries -->
 </udml>
 ```
 
-***
+---
 
-### 4. Sections Overview
+## 🔭 Roadmap
 
-#### 4.1 `<instructions>`
+We're actively working on:
 
-Optional block of plain language design intent, helpful for AI tools.
+- ✅ Spec v0.1 (draft component definitions)
+- 🔄 Schema definition (XSD/JSON Schema)
+- 🔧 CLI for validation and conversion
+- 🧩 Figma exporter (WIP)
+- 📘 Public docs (via GitBook)
+- 🌱 A growing, open-source community
 
-```xml
-<instructions>
-  This is a mobile-first ecommerce UI for small shops.
-  Prioritize large touch targets, fast browsing, and clear visual hierarchy.
-</instructions>
-```
+---
 
-#### 4.2 `<meta>`
+## 🪪 License
 
-Structured metadata to support tooling, versioning, or design context.
+Open-source and free to use. Final license pending.
 
-```xml
-<meta>
-  <author name="Jane Doe"/>
-  <project name="QuickShop"/>
-  <preferredLibrary>React</preferredLibrary>
-</meta>
-```
+---
 
-#### 4.3 `<tokens>`
+Want to shape the future of how humans and AI build software together?
 
-Design tokens for color, spacing, font, and border radius:
-
-```xml
-<color name="primary" value="#3366FF"/>
-<spacing name="md" value="16px"/>
-<font name="heading" value="Inter" size="24px"/>
-```
-
-#### 4.4 `<styles>`
-
-Named collections of properties that can be applied to any component:
-
-```xml
-<style name="card-default">
-  <property name="elevation" value="1"/>
-  <property name="padding" value="16"/>
-</style>
-```
-
-#### 4.5 `<components>`
-
-Custom reusable components composed of UDML primitives:
-
-```xml
-<component name="UserCard">
-  <card style="card-default">
-    <slot name="avatar"/>
-    <slot name="name"/>
-    <slot name="action"/>
-  </card>
-</component>
-```
-
-#### 4.6 `<screens>`
-
-Each screen defines a complete UI view:
-
-```xml
-<screen name="Home">
-  <layout type="stack">
-    <text>Welcome to QuickShop</text>
-    <component is="UserCard">
-      <avatar slot="avatar" src="user.png"/>
-      <text slot="name">Jane Doe</text>
-      <button slot="action">View Profile</button>
-    </component>
-  </layout>
-</screen>
-```
-
-#### 4.7 `<imports>`
-
-Reference external design systems or shared components:
-
-```xml
-<import src="https://cdn.example.com/ui/tokens.udml"/>
-```
-
-***
-
-### 5. Roadmap for UDML v1.0
-
-* Define a formal schema (XSD or JSON Schema)
-* Build a validator and converter CLI
-* Create an official documentation site (Docusaurus or GitBook)
-* Develop tooling (e.g. Figma exporter, browser-based live renderer)
-* Establish contribution process and working group
-
-***
-
-### 6. License
-
-MIT or similar—pending open-source plan
+👉 [Start here](../../discussions)
