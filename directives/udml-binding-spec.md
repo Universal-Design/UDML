@@ -6,7 +6,7 @@ The `<data>` directive provides a simple way to specify data binding for individ
 
 ## 🧠 Purpose
 
-To enable designers to specify what data should populate each visual element, while maintaining complete control over the element's appearance and layout.
+To enable designers to specify what data should populate each visual element, while maintaining complete control over the element's appearance and layout. Designers often don't have access to the actual data binding values, or they don't even exist yet, so this method allows them to communicate intent in a way that can be easily updated later.
 
 ---
 
