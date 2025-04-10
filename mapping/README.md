@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # UDML Mapping Tools
 
 This directory contains tools for automatically generating UDML mappings from your existing React components.
@@ -5,6 +9,7 @@ This directory contains tools for automatically generating UDML mappings from yo
 ## Tools
 
 ### 1. Storybook Mapping Generator
+
 Generates UDML mappings from your Storybook components and stories.
 
 ```bash
@@ -16,6 +21,7 @@ node storybook-mapping-generator.js
 ```
 
 ### 2. VS Code Extension
+
 A VS Code extension that automatically generates and updates UDML mappings as you work.
 
 ```bash
@@ -98,16 +104,19 @@ module.exports = {
 ## Development
 
 1. Install dependencies:
+
 ```bash
 npm install
 ```
 
 2. Build the VS Code extension:
+
 ```bash
 npm run compile
 ```
 
 3. Run tests:
+
 ```bash
 npm test
 ```
@@ -118,4 +127,4 @@ npm test
 2. Create a feature branch
 3. Commit your changes
 4. Push to the branch
-5. Create a Pull Request 
+5. Create a Pull Request
