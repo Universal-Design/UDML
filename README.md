@@ -8,6 +8,65 @@ Unlike static design files, UDML is *inherently semantic* and *machine-readable 
 
 ---
 
+## 💡 Let's see it!
+
+### Here's a Figma design based on Airbnb:
+
+[Airbnb Listing Card](https://universaldesign.io/assets/ListingCard.svg)
+
+### Here's how it looks in UDML:
+
+```xml
+<Component name="ListingCard">
+	<Column name="cardContainer" cornerRadius="lg" gap="med">
+	<!-- Image Carousel -->
+	<Column name="carouselContainer">
+ 		<Carousel height="200px" autoScroll="false" onHover=showArrows(leftArrow, RightArrow) dotIndicators="true">
+			<repeat>
+				<Image><Data description="listing image" limit=10/></Image>
+			</repeat>
+		</Carousel>
+
+		<Badge layer=2 variant="highlight" margin="16px" position="top-left">Superhost</Badge>
+		<IconButton layer=2 icon="heart" variant="ghost" onClick="toggleFavorite" position="top-right" />
+		
+		<!-- Scroll arrows (shown on hover) -->
+		<IconButton name="leftArrow" layer=2 visibility="hidden" icon="chevron-left" onClick="previousSlide" position="center-left"/>
+		<IconButton name="rightArrow" layer=2 visibility="hidden" icon="chevron-right" onClick="nextSlide" position="center-right"/>
+		
+		<Interaction name="showArrows>
+			<Action type="setProperty" property="visibility" value="true">
+		</Interaction>
+	</Column>
+
+	<!-- Property Details -->
+	<Column name="listingDetails" padding="md" justify="space-between">
+		<Row name="topRow" gap="auto">
+			<Text variant="title-sm">Groveland, California</Text>
+			<Row name="starRating" gap="xs" align="center">
+				<Icon name="star" size="sm" />
+				<Text variant="body-sm">4.91</Text>
+			</Row>
+		</Row>
+		<Text variant="body-sm">Yosemite National Park</Text>
+		<Text variant="body-sm"><Data description="date range"</Data></Text>
+		<Text variant="body-bold">$289/night</Text>
+	 </Column>
+
+	 </Column>
+</Component>
+```
+
+### And here's the code, all of which was generated in Claude 3.7 with a single prompt from the UDML above.
+
+<iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/Mike-M-the-vuer/embed/MYYgQpy?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/Mike-M-the-vuer/pen/MYYgQpy">
+  Untitled</a> by Mike M (<a href="https://codepen.io/Mike-M-the-vuer">@Mike-M-the-vuer</a>)
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+---
+
 ## 💡 Why UDML?
 
 The way we design and build interfaces is changing — fast.
