@@ -1,12 +1,12 @@
-# 🌐 What is UDML?
+# What is UDML?
 
 ### A universal design language for the AI era — built in public, by the community
 
 > **UDML** (Universal Design Markup Language) is an open, semantic design language that describes user interfaces in a way that AI developer agents — like Cursor, Copilot, or Claude — can turn into fully functional applications across platforms and frameworks.
 
-Unlike static design files, UDML is *inherently semantic* and *machine-readable by default*. But more importantly, it's *meant to evolve with your input.*
+Unlike static design files, UDML is _inherently semantic_ and _machine-readable by default_. But more importantly, it's _meant to evolve with your input._
 
----
+***
 
 ## 💡 Let's see it!
 
@@ -59,71 +59,74 @@ Unlike static design files, UDML is *inherently semantic* and *machine-readable 
 
 ### And here's the code, all of which was generated in Claude 3.7 with a single prompt from the UDML above.
 
-<iframe height="600" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/Mike-M-the-vuer/embed/MYYgQpy?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/Mike-M-the-vuer/pen/MYYgQpy">
-  Untitled</a> by Mike M (<a href="https://codepen.io/Mike-M-the-vuer">@Mike-M-the-vuer</a>)
-  on <a href="https://codepen.io">CodePen</a>.
-</iframe>
+{% embed url="https://codepen.io/Mike-M-the-vuer/pen/MYYgQpy" %}
 
----
+***
 
 ## 💡 Why UDML?
 
 The way we design and build interfaces is changing — fast.
 
-- Design tools like Figma are visual, but not semantic.
-- AI tools are smart, but need structure and context to generate production-grade code.
-- Developers and designers still rely on handoff, rewrites, and tribal knowledge to ship UI.
+* Design tools like Figma are visual, but not semantic.
+* AI tools are smart, but need structure and context to generate production-grade code.
+* Developers and designers still rely on handoff, rewrites, and tribal knowledge to ship UI.
 
-**UDML changes that** by creating a shared language between humans and machines — one that describes *intent*, not just pixels.
+**UDML changes that** by creating a shared language between humans and machines — one that describes _intent_, not just pixels.
 
----
+***
 
 ## 🤝 Made to Be a Community Standard
 
 UDML isn’t just a spec — it’s a conversation.
 
 We’re building this in the open, and we need your help:
-- 📐 Suggest improvements to the language and naming
-- 🧩 Propose new components, behaviors, or interaction patterns
-- 🔌 Share ideas for tooling, integrations, and real-world use
 
-> **If you've ever wanted a better way to design for machines *and* people — you're in the right place.**
+* 📐 Suggest improvements to the language and naming
+* 🧩 Propose new components, behaviors, or interaction patterns
+* 🔌 Share ideas for tooling, integrations, and real-world use
 
-Join the [Discussions](../../discussions), open an [Issue](../../issues), or jump into a [Pull Request](../../pulls). We’d love to hear from you.
+> **If you've ever wanted a better way to design for machines&#x20;**_**and**_**&#x20;people — you're in the right place.**
 
----
+Join the [Discussions](discussions/), open an [Issue](issues/), or jump into a [Pull Request](pulls/). We’d love to hear from you.
+
+***
 
 ## 🔍 Quick Overview
 
 ### ✅ What UDML Is:
-- XML-based and easy to parse
-- Describes structure, style, behavior, and intent
-- Designed for AI agents to generate UI across any environment
-- Modular, extensible, and reusable
+
+* XML-based and easy to parse
+* Describes structure, style, behavior, and intent
+* Designed for AI agents to generate UI across any environment
+* Modular, extensible, and reusable
 
 ### 🚫 What It’s Not:
-- A rendering engine
-- A replacement for Figma or code
-- A locked spec — we’re building this together
 
----
+* A rendering engine
+* A replacement for Figma or code
+* A locked spec — we’re building this together
+
+***
 
 ## 🧠 Core Concepts
 
 ### 1. **Semantic UI**
+
 Everything in UDML maps to a real UI concept — not just a shape or layer.
 
 ### 2. **AI-Oriented**
-You can embed **plain language instructions** to help AI understand the *why* behind your design.
+
+You can embed **plain language instructions** to help AI understand the _why_ behind your design.
 
 ### 3. **Modular & Reusable**
+
 Use components, tokens, and imports to scale across teams and projects.
 
 ### 4. **Open & Extensible**
+
 UDML can grow with your needs — define your own tokens, screens, and even new elements.
 
----
+***
 
 ## 🗂 UDML Structure
 
@@ -139,27 +142,27 @@ UDML can grow with your needs — define your own tokens, screens, and even new 
 </udml>
 ```
 
----
+***
 
 ## 🔭 Roadmap
 
 We're actively working on:
 
-- ✅ Spec v0.1 (draft component definitions)
-- 🔄 Schema definition (XSD/JSON Schema)
-- 🔧 CLI for validation and conversion
-- 🧩 Figma exporter (WIP)
-- 📘 Public docs (via GitBook)
-- 🌱 A growing, open-source community
+* ✅ Spec v0.1 (draft component definitions)
+* 🔄 Schema definition (XSD/JSON Schema)
+* 🔧 CLI for validation and conversion
+* 🧩 Figma exporter (WIP)
+* 📘 Public docs (via GitBook)
+* 🌱 A growing, open-source community
 
----
+***
 
 ## 🪪 License
 
 Open-source and free to use. Final license pending.
 
----
+***
 
 Want to shape the future of how humans and AI build software together?
 
-👉 [Start here](../../discussions)
+👉 [Start here](discussions/)
