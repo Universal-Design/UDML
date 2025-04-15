@@ -57,9 +57,11 @@ Unlike static design files, UDML is _inherently semantic_ and _machine-readable 
 </Component>
 ```
 
-### And here's the code, all of which was generated in Claude 3.7 with a single prompt from the UDML above.
+### And here's the AI-generated code:
 
-{% embed url="https://codepen.io/Mike-M-the-vuer/pen/MYYgQpy?default-tab=result" height="500" %}
+{% embed url="https://codepen.io/Mike-M-the-vuer/pen/MYYgQpy?default-tab=result" %}
+This was all generated in Claude 3.7 with a single prompt from the UDML above, except the image URLs which I pasted in.
+{% endembed %}
 
 ***
 
